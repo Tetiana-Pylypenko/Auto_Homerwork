@@ -16,8 +16,6 @@ def test_logo_main_page(browser):
     services_url = "https://www.epam.com/about/"
     main_page_url = "https://www.epam.com/"
 
-    #driver = webdriver.Chrome() 
-
     driver.get(services_url)
     driver.maximize_window()
 
@@ -32,5 +30,4 @@ def test_logo_main_page(browser):
    
     assert driver.current_url == main_page_url, f"Test Failed: Clicking the company logo does not lead to the main page."
     
-
     driver.quit()

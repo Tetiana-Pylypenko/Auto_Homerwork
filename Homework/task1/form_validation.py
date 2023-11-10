@@ -25,3 +25,5 @@ def test_validation():
             error_message = validation_block.get_attribute('innerText')
 
         assert error_message, "Error message is empty"
+
+        
